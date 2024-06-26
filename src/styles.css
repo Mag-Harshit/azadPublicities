@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color: #B19691;
+}
+
 nav{
     min-height: 85px;
     width: 100%;
-    background-color: #333333;
+    background-color: #B19691;
 }
+
