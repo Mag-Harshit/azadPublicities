@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+    min-height: 85px;
+    width: 100%;
+    background-color: #333333;
+}
