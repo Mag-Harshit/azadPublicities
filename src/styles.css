@@ -69,3 +69,19 @@ nav {
 #AboutUsBtn:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.card {
+  @apply h-96 sm:h-auto max-w-80  sm:max-w-96 bg-white rounded-xl;
+}
+
+.card:hover {
+  box-shadow: 5px 5px #696969;
+}
+
+#ServicesBtn {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#ServicesBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
