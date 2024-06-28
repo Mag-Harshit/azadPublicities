@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import Navbar from './Navbar'
+import { useState } from "react";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import AboutUsHome from "./AboutUsHome";
 
 function App() {
-
-
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <Hero />
+      <AboutUsHome />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

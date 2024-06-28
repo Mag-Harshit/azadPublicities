@@ -2,13 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #B19691;
+body {
+  background-color: #b19691;
 }
 
-nav{
-    min-height: 85px;
-    width: 100%;
-    background-color: #B19691;
+nav {
+  min-height: 85px;
+  width: 100%;
+  background-color: #b19691;
 }
 
+#intro {
+  background-image: url("/img/bg_img2.jpg");
+  height: 700px;
+}
+
+.bg-image {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.shadow-1-strong {
+  box-shadow: 0 0px 2px 0 rgba(var(--mdb-box-shadow-color-rgb), 0.16),
+    0 1px 1px 0 rgba(var(--mdb-box-shadow-color-rgb), 0.1) !important;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#ServicesBtn {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#ServicesBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.NavItems {
+  @apply m-3 lg:block text-lg font-medium hover:text-gray-400 font-mono;
+}
+
+.AbHome {
+  background-image: url("/img/wave-haikei.png");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  min-height: 900px;
+}
+
+#AboutUsBtn {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#AboutUsBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
