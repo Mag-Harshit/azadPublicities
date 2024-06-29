@@ -4,7 +4,7 @@ const AboutUsHome = () => {
   return (
     <section className="mt-10">
       <div className="flex justify-center mb-5">
-        <h2 className="text-5xl font-semibold">ABOUT US</h2>
+        <h2 className="text-5xl shadow-header">ABOUT US</h2>
       </div>
       <div className="m-auto font-body rounded-3xl AbHome w-11/12 p-4">
         <h3 className="text-2xl mt-3 text-center font-medium mb-4">
@@ -15,7 +15,7 @@ const AboutUsHome = () => {
             <img src="/img/AboutUsHome.avif" height={"100%"} alt="" />
           </div>
           <div className="w-11/12 ">
-            <p className="text-center font-body font-medium text-xl sm:text-2xl">
+            <p className=" text-left sm:text-left font-body font-medium text-xl sm:text-2xl">
               Azad Publicities has been a pioneer in the outdoor advertising
               industry for over eight decades. Established in 1938, we have
               consistently delivered innovative and impactful advertising

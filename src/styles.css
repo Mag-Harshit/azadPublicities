@@ -71,17 +71,80 @@ nav {
 }
 
 .card {
-  @apply h-96 sm:h-auto max-w-80  sm:max-w-96 bg-white rounded-xl;
+  @apply h-card2 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 bg-white rounded-xl;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardImg {
+  @apply h-card2 xsm:h-card w-6/12 border-black border-b-2 sm:w-full sm:mx-auto sm:h-4/6;
 }
 
 .card:hover {
   box-shadow: 5px 5px #696969;
+  transform: scale(1.05);
 }
 
 #ServicesBtn {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(49, 130, 206, 0.5);
 }
 
 #ServicesBtn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(49, 130, 206, 0.1);
+}
+
+.card2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card2:hover {
+  box-shadow: 5px 5px #696969;
+  transform: scale(1.05);
+}
+
+.ClientHome {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.ProjectBG {
+  background-image: url(/img/bg-3.png);
+  background-repeat: no-repeat;
+  background-color: #696969;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+.footer-bottom a {
+  color: #ff0000;
+  margin: 0 10px;
+}
+
+@media (max-width: 640px) {
+  .ClientHome {
+    writing-mode: horizontal-tb;
+  }
+}
+
+@media (max-width: 512px) {
+  .footerChange {
+    margin-top: 45px !important;
+  }
 }

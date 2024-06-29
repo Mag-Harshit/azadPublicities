@@ -3,14 +3,15 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import AboutUsHome from "./AboutUsHome";
 import Services from "./Services";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <AboutUsHome />
       <Services />
+      <Projects />
     </div>
   );
 };
