@@ -13,8 +13,8 @@ export default {
       },
       height: {
         card: "200px",
-        card2: "230px",
-        card3: "270px",
+        card2: "220px",
+        card3: "240px",
       },
       screens: {
         xsm: "456px",

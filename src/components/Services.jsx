@@ -18,8 +18,7 @@ const Services = () => {
               </h1>
               <p className="text-center">
                 High-quality boards and banners that effectively communicate
-                your brand message at events, promotions, and various
-                advertising locations.
+                your brand message at various advertising locations.
               </p>
             </div>
           </div>
@@ -33,8 +32,7 @@ const Services = () => {
               <h1 className="text-2xl text-center mb-3 mt-2">Neon Signs</h1>
               <p className="text-center">
                 Bright, eye-catching neon signs designed to enhance your
-                business's visibility both day and night. Perfect for
-                storefronts and indoor displays.
+                business's visibility both day and night.
               </p>
             </div>
           </div>
@@ -43,9 +41,8 @@ const Services = () => {
             <div className="flex flex-col">
               <h1 className="text-2xl text-center mb-3 mt-2">Kiosks</h1>
               <p className="text-center">
-                Interactive advertising kiosks placed in strategic, high-traffic
-                areas to engage customers and provide information about your
-                products or services.
+                Interactive advertising kiosks in high-traffic areas to engage
+                customers and provide product or service information.
               </p>
             </div>
           </div>
@@ -87,7 +84,7 @@ const Services = () => {
             />
             <div className="flex flex-col">
               <h1 className="text-2xl text-center mb-3 mt-2">
-                Roadway & Highway Advertising
+                Highway Advertising
               </h1>
               <p className="text-center">
                 Large advertisements on roadways and highways, capturing the

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [itemVisible, setItemVisible] = useState(false);
   function handleVisibility() {
     setItemVisible(!itemVisible);
@@ -57,7 +59,14 @@ const Navbar = () => {
           </li>
           <li>
             {" "}
-            <button className="NavItems">About Us</button>
+            <button
+              className="NavItems"
+              onClick={() => {
+                navigate("/aboutUs");
+              }}
+            >
+              About Us
+            </button>
           </li>
           <li>
             {" "}
@@ -66,10 +75,6 @@ const Navbar = () => {
           <li>
             {" "}
             <button className="NavItems">Portfolio</button>
-          </li>
-          <li>
-            {" "}
-            <button className="NavItems">Testimonials</button>
           </li>
           <li>
             {" "}

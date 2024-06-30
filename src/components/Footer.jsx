@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="p-3 mt-20">
       <div class="footer-container flex flex-wrap justify-around mx-auto">
@@ -21,7 +23,14 @@ const Footer = () => {
               <button>Home</button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button href="about.html">About Us</button>
+              <button
+                href="about.html"
+                onClick={() => {
+                  navigate("/aboutUs");
+                }}
+              >
+                About Us
+              </button>
             </li>
             <li className="text-md my-3 hover:text-black">
               <button href="services.html">Services</button>

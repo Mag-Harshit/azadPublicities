@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const AboutUsHome = () => {
+  const navigate = useNavigate();
   return (
     <section className="mt-10">
       <div className="flex justify-center mb-5">
@@ -39,6 +40,9 @@ const AboutUsHome = () => {
               <button
                 className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
                 id="AboutUsBtn"
+                onClick={() => {
+                  navigate("/aboutUs");
+                }}
               >
                 Learn More About Us
               </button>

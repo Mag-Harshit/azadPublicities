@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import AboutUsHome from "./AboutUsHome";
 import Services from "./Services";
 import Projects from "./Projects";
+import { BrowserRouter } from "react-router-dom";
 
 const Home = () => {
   return (

@@ -71,7 +71,7 @@ nav {
 }
 
 .card {
-  @apply h-card2 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 bg-white rounded-xl;
+  @apply h-card2 flex mx-1 flex-row max-w-7xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 bg-white rounded-xl;
   transition: transform 0.3s ease-in-out;
 }
 
