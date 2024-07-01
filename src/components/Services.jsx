@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
   return (
     <div className="mt-12 rounded-lg p-3">
       <div className="flex flex-col justify-center items-center">
@@ -97,6 +99,9 @@ const Services = () => {
           <button
             className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
             id="ServicesBtn"
+            onClick={() => {
+              navigate("/services");
+            }}
           >
             More Services
           </button>

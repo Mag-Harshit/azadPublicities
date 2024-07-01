@@ -5,6 +5,8 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import AboutUs from "./AboutUs";
+import ServicesMain from "./ServicesMain";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/services" element={<ServicesMain />} />
         </Routes>
         <Footer />
       </BrowserRouter>
