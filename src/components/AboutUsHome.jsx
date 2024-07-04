@@ -5,7 +5,7 @@ const AboutUsHome = () => {
   return (
     <section className="mt-10">
       <div className="flex justify-center mb-5">
-        <h2 className="text-5xl shadow-header">ABOUT US</h2>
+        <h2 className="text-5xl">ABOUT US</h2>
       </div>
       <div className="m-auto font-body rounded-3xl AbHome w-11/12 p-4">
         <h3 className="text-2xl mt-3 text-center font-medium mb-4">

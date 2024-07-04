@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 body {
-  background-color: #b19691;
+  background-color: white;
 }
 
 nav {
   min-height: 85px;
   width: 100%;
-  background-color: #b19691;
+  background-color: white;
 }
 
 #intro {
@@ -56,7 +56,6 @@ nav {
 }
 
 .AbHome {
-  background-image: url("/img/wave-haikei.png");
   background-color: #ffffff;
   background-repeat: no-repeat;
   min-height: 900px;
@@ -71,10 +70,13 @@ nav {
 }
 
 .card {
-  @apply h-card2 flex mx-1 flex-row max-w-7xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 bg-white rounded-xl;
+  @apply h-card2 flex mx-1 flex-row max-w-7xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 text-black rounded-xl;
   transition: transform 0.3s ease-in-out;
 }
 
+.card {
+  background-color: #a7a7a7;
+}
 .cardImg {
   @apply h-card2 xsm:h-card w-6/12 border-black border-b-2 sm:w-full sm:mx-auto sm:h-4/6;
 }

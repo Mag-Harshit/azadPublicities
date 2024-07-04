@@ -8,7 +8,10 @@ const Services = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="uppercase text-5xl shadow-header">Services</div>
         <div className="flex flex-col gap-4  sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-5 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6 mt-4">
-          <div className="card2 h-card3 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 bg-white rounded-xl">
+          <div
+            className="card2 h-card3 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 text-black rounded-xl"
+            style={{ backgroundColor: "#a7a7a7" }}
+          >
             <img
               className="h-card3 xsm:h-card w-6/12 border-black border-b-2 sm:w-full sm:mx-auto sm:h-4/6"
               src="/img/Boards-Banners.jpg"
@@ -78,7 +81,10 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="card2 h-card3 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 bg-white rounded-xl">
+          <div
+            className="card2 h-card3 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 text-black rounded-xl"
+            style={{ backgroundColor: "#a7a7a7" }}
+          >
             <img
               className="h-card3 xsm:h-card w-6/12 border-black border-b-2 sm:w-full sm:mx-auto sm:h-4/6"
               src="/img/Road-High-Img.jpg"
