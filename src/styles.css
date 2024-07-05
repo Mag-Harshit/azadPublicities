@@ -51,14 +51,28 @@ nav {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.NavItems {
-  @apply m-3 lg:block text-lg font-medium hover:text-gray-400 font-mono;
+#ServicesBtn2 {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+#ServicesBtn2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NavItems {
+  @apply m-3 lg:block text-lg font-medium hover:text-gray-400;
+}
+
+.NavItems {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.homeFont {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .AbHome {
   background-color: #ffffff;
   background-repeat: no-repeat;
-  min-height: 900px;
+  min-height: 700px;
 }
 
 #AboutUsBtn {
@@ -84,14 +98,6 @@ nav {
 .card:hover {
   box-shadow: 5px 5px #696969;
   transform: scale(1.05);
-}
-
-#ServicesBtn {
-  background-color: rgba(49, 130, 206, 0.5);
-}
-
-#ServicesBtn:hover {
-  background-color: rgba(49, 130, 206, 0.1);
 }
 
 .card2 {

@@ -5,7 +5,7 @@ const Projects = () => {
     <section className="mt-12 p-2 rounded ProjectBG">
       <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row justify-between items-center">
         <div className="flex flex-col sm:flex-row items-center sm:w-6/12 gap-4">
-          <h2 className="text-4xl ClientHome font-bold ml-10 md:text-3xl lg:text-5xl">
+          <h2 className="text-7xl font-extrabold ClientHome ml-10 sm:text-3xl md:text-3xl lg:text-5xl">
             OUR CLIENTS
           </h2>
           <p className=" text-xl md:text-xl lg:text-2xl font-medium">

@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="mt-12 rounded-lg p-3">
       <div className="flex flex-col justify-center items-center">
-        <div className="uppercase text-5xl shadow-header">Services</div>
+        <div className="uppercase text-7xl font-extrabold">Services</div>
         <div className="flex flex-col gap-4  sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-5 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6 mt-4">
           <div
             className="card2 h-card3 flex mx-1 flex-row max-w-xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 text-black rounded-xl"
@@ -104,7 +104,7 @@ const Services = () => {
         <div className="text-center">
           <button
             className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
-            id="ServicesBtn"
+            id="ServicesBtn2"
             onClick={() => {
               navigate("/services");
             }}
