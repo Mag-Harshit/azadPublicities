@@ -21,51 +21,28 @@ const Footer = () => {
           <h3 className="text-2xl mt-2 mb-2 footerChange">Quick Links</h3>
           <ul>
             <li className="text-md my-3 hover:text-black">
-              <button
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                Home
+              <button>
+                <a href="/"> Home</a>
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button
-                href="about.html"
-                onClick={() => {
-                  navigate("/aboutUs");
-                }}
-              >
-                About Us
+              <button>
+                <a href="/aboutUs">About Us</a>
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button
-                href="services.html"
-                onClick={() => {
-                  navigate("/services");
-                }}
-              >
-                Services
+              <button>
+                <a href="/services"> Services</a>
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button
-                href="portfolio.html"
-                onClick={() => {
-                  navigate("/portfolio");
-                }}
-              >
-                Portfolio
+              <button>
+                <a href="/portfolio"> Portfolio</a>
               </button>
             </li>
 
             <li className="text-md my-3 hover:text-black">
-              <button
-                href="contact.html"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Contact Us
               </button>
             </li>

@@ -5,14 +5,14 @@ const AboutUsHome = () => {
   return (
     <section className="mt-10">
       <div className="m-auto font-body rounded-3xl AbHome w-11/12 p-4">
+        <div className="flex justify-center mr-auto mb-5">
+          <h2 className="text-7xl font-extrabold">ABOUT US</h2>
+        </div>
         <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-4">
           <div className="max-w-xs  sm:max-w-sm  md:max-w-md lg:max-w-xl">
             <img src="/img/AboutUsHome.avif" height={"100%"} alt="" />
           </div>
           <div className="w-11/12 ">
-            <div className="flex justify-center mb-5">
-              <h2 className="text-7xl font-extrabold">ABOUT US</h2>
-            </div>
             <h3 className="text-2xl mt-3 text-center font-medium mb-4">
               Your Trusted Advertising Partner Since 1938
             </h3>
@@ -31,11 +31,8 @@ const AboutUsHome = () => {
               <button
                 className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
                 id="AboutUsBtn"
-                onClick={() => {
-                  navigate("/aboutUs");
-                }}
               >
-                Learn More About Us
+                <a href="/aboutUs">Learn More About Us</a>
               </button>
             </div>
           </div>

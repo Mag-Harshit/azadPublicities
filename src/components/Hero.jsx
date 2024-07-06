@@ -1,13 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div id="intro" className="p-5 text-center bg-image shadow-1-strong">
         <div className="mask flex justify-center items-center">
           <div className="flex justify-center items-center flex-col">
             <div>
-              <h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="text-white font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
                 Your Trusted Advertising Partner Since 1938
               </h1>
             </div>
@@ -22,7 +24,7 @@ const Hero = () => {
                 className="text-white w-auto p-4 border-black border-4 text-xl rounded-lg"
                 id="ServicesBtn"
               >
-                Discover Our Services
+                <a href="/services"> Discover Our Services</a>
               </button>
             </div>
           </div>

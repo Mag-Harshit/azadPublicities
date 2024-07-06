@@ -105,11 +105,8 @@ const Services = () => {
           <button
             className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
             id="ServicesBtn2"
-            onClick={() => {
-              navigate("/services");
-            }}
           >
-            More Services
+            <a href="/services"> More Services</a>
           </button>
         </div>
       </div>

@@ -51,7 +51,7 @@ const Projects = () => {
             </div>
           </div>
           <button
-            className="carousel-control-prev"
+            className="carousel-control-prev text-black"
             type="button"
             data-bs-target="#carouselExample"
             data-bs-slide="prev"
@@ -63,7 +63,7 @@ const Projects = () => {
             <span className="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            className="carousel-control-next text-black"
             type="button"
             data-bs-target="#carouselExample"
             data-bs-slide="next"

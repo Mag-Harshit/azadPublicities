@@ -9,6 +9,14 @@ const Navbar = () => {
     console.log(itemVisible);
   }
 
+  function handleMenuRemover() {
+    console.log("sewew");
+    if (itemVisible) {
+      setItemVisible(!itemVisible);
+      console.log("HELLO");
+    }
+  }
+
   return (
     <nav className="border-black border-b-1 shadow">
       <div className="flex flex-col justify-center items-center lg:justify-between lg:items-center lg:flex-row">
@@ -58,6 +66,7 @@ const Navbar = () => {
             <button
               className="NavItems"
               onClick={() => {
+                handleMenuRemover();
                 navigate("/");
               }}
             >
@@ -69,6 +78,7 @@ const Navbar = () => {
             <button
               className="NavItems"
               onClick={() => {
+                handleMenuRemover();
                 navigate("/aboutUs");
               }}
             >
@@ -80,6 +90,7 @@ const Navbar = () => {
             <button
               className="NavItems"
               onClick={() => {
+                handleMenuRemover();
                 navigate("/services");
               }}
             >
@@ -91,6 +102,7 @@ const Navbar = () => {
             <button
               className="NavItems"
               onClick={() => {
+                handleMenuRemover();
                 navigate("/portfolio");
               }}
             >
