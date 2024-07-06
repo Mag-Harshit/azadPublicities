@@ -1,7 +1,20 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 const AboutUsHome = () => {
-  const navigate = useNavigate();
+  useEffect(() => {
+    const handleScroll = () => {
+      const text = document.querySelectorAll(".transiText");
+      text.forEach((texts) => {
+        const rect = texts.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          texts.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section className="mt-10">
       <div className="m-auto font-body rounded-3xl AbHome w-11/12 p-4">
@@ -9,14 +22,14 @@ const AboutUsHome = () => {
           <h2 className="text-7xl font-extrabold">ABOUT US</h2>
         </div>
         <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-4">
-          <div className="max-w-xs  sm:max-w-sm  md:max-w-md lg:max-w-xl">
+          <div className="max-w-xs transiText sm:max-w-sm  md:max-w-md lg:max-w-xl">
             <img src="/img/AboutUsHome.avif" height={"100%"} alt="" />
           </div>
           <div className="w-11/12 ">
-            <h3 className="text-2xl mt-3 text-center font-medium mb-4">
+            <h3 className="text-2xl mt-3 text-center font-medium mb-4 transiText">
               Your Trusted Advertising Partner Since 1938
             </h3>
-            <p className=" text-left sm:text-left font-medium text-xl sm:text-2xl homeFont">
+            <p className=" text-left sm:text-left font-medium text-xl sm:text-2xl homeFont transiText">
               Azad Publicities has been a pioneer in the outdoor advertising
               industry for over eight decades. Established in 1938, we have
               consistently delivered innovative and impactful advertising
@@ -29,7 +42,7 @@ const AboutUsHome = () => {
             </p>
             <div className="text-center">
               <button
-                className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
+                className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8 transiText"
                 id="AboutUsBtn"
               >
                 <a href="/aboutUs">Learn More About Us</a>

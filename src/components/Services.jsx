@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Services = () => {
-  const navigate = useNavigate();
+  useEffect(() => {
+    const handleScroll = () => {
+      const cards = document.querySelectorAll(".card");
+      const cards2 = document.querySelectorAll(".card2");
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          card.classList.add("visible");
+        }
+      });
+      cards2.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          card.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Trigger on mount
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="mt-12 rounded-lg p-3">
       <div className="flex flex-col justify-center items-center">
