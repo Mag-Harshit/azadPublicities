@@ -3,10 +3,12 @@ import React from "react";
 const AboutUs = () => {
   return (
     <div>
-      <div className="text-7xl font-extrabold text-center mt-5">ABOUT US</div>
+      <div className="text-7xl font-extrabold text-center mt-5">
+        <h1>ABOUT US</h1>
+      </div>
       <div className="mt-5">
         <h2 className="text-5xl font-semibold text-center">Company History</h2>
-        <p className="mt-4 text-2xl">
+        <p className="mt-4 ml-2 text-2xl">
           Azad Publicities, established in Ludhiana, has been a prominent player
           in the advertising industry for several decades. Founded by the
           visionary Mr. Naresh Nanchahal, the company has grown from a small
@@ -61,7 +63,7 @@ const AboutUs = () => {
         <h2 className="text-5xl font-semibold text-center">
           Vision and Mission
         </h2>
-        <p className="mt-4 text-2xl">
+        <p className="mt-4 ml-2 text-2xl">
           At Azad Publicities, our mission is to provide innovative and
           effective advertising solutions that help our clients achieve their
           business objectives. We are committed to delivering excellence in

@@ -156,3 +156,13 @@ footer {
     margin-top: 45px !important;
   }
 }
+
+.servicesCard {
+  @apply flex mt-5 flex-col gap-4 lg:flex-row md:justify-center md:gap-12 items-center border-black mx-4 p-2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.servicesCard:hover {
+  box-shadow: 5px 5px #696969;
+  transform: scale(1.01);
+}
