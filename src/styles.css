@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: white;
+  background-color: #b3b3b3;
+  color: white;
 }
 
 nav {
@@ -200,4 +201,18 @@ footer {
 
 .servicesHome {
   background-color: #b3b3b3;
+}
+
+.aboutImageMain {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/img/AboutUsMains.avif");
+}
+
+.visionIMg {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/img/Vision_Img.avif");
 }

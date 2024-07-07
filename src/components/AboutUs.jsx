@@ -1,31 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const AboutUs = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const text = document.querySelectorAll(".transiText");
+      text.forEach((texts) => {
+        const rect = texts.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          texts.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div>
-      <div className="text-7xl font-extrabold text-center mt-5">
-        <h1>ABOUT US</h1>
+      <div className="aboutImageMain text-white ">
+        <div className="text-7xl font-extrabold text-center p-5 transiText">
+          <h1>ABOUT US</h1>
+        </div>
+        <div className="mt-5 transiText">
+          <h2 className="text-5xl font-semibold text-center">
+            Company History
+          </h2>
+          <p className="mt-4 ml-2 text-2xl px-1 pb-8">
+            Azad Publicities, established in Ludhiana, has been a prominent
+            player in the advertising industry for several decades. Founded by
+            the visionary Mr. Naresh Nanchahal, the company has grown from a
+            small advertising firm into a leading agency known for its
+            innovative and impactful advertising solutions. Over the years, Azad
+            Publicities has consistently delivered exceptional results for its
+            clients, adapting to the changing landscape of advertising and
+            embracing new technologies and mediums. <br />
+            <br />
+            Sadly, Mr. Naresh Nanchahal passed away, leaving behind a legacy of
+            excellence and a company that continues to thrive under the
+            leadership of his successors. His vision and dedication laid the
+            foundation for the success and growth of Azad Publicities, and his
+            influence remains a guiding force in the company's operations.
+          </p>
+        </div>
       </div>
-      <div className="mt-5">
-        <h2 className="text-5xl font-semibold text-center">Company History</h2>
-        <p className="mt-4 ml-2 text-2xl">
-          Azad Publicities, established in Ludhiana, has been a prominent player
-          in the advertising industry for several decades. Founded by the
-          visionary Mr. Naresh Nanchahal, the company has grown from a small
-          advertising firm into a leading agency known for its innovative and
-          impactful advertising solutions. Over the years, Azad Publicities has
-          consistently delivered exceptional results for its clients, adapting
-          to the changing landscape of advertising and embracing new
-          technologies and mediums. <br />
-          <br />
-          Sadly, Mr. Naresh Nanchahal passed away, leaving behind a legacy of
-          excellence and a company that continues to thrive under the leadership
-          of his successors. His vision and dedication laid the foundation for
-          the success and growth of Azad Publicities, and his influence remains
-          a guiding force in the company's operations.
-        </p>
-      </div>
-      <div className="mt-5">
+      <div className="mt-5 pb-5 transiText">
         <h2 className="text-5xl font-semibold mb-5 text-center">Our team</h2>
         <div className="flex flex-col md:flex-row justify-around gap-5 items-center">
           <div className="flex flex-col text-center">
@@ -59,11 +78,11 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5">
-        <h2 className="text-5xl font-semibold text-center">
+      <div className="p-14 visionIMg">
+        <h2 className="text-5xl font-semibold text-center transiText">
           Vision and Mission
         </h2>
-        <p className="mt-4 ml-2 text-2xl">
+        <p className="mt-4 ml-2 text-2xl pb-5 transiText">
           At Azad Publicities, our mission is to provide innovative and
           effective advertising solutions that help our clients achieve their
           business objectives. We are committed to delivering excellence in
