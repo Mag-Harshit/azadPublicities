@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const AboutUsHome = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       const text = document.querySelectorAll(".transiText");
@@ -44,6 +46,7 @@ const AboutUsHome = () => {
               <button
                 className="text-white w-auto p-4 border-black border-4 text-xl rounded-lg mt-8 transiText"
                 id="AboutUsBtn"
+                onClick={() => [navigate("/aboutUs")]}
               >
                 <a href="/aboutUs">Learn More About Us</a>
               </button>

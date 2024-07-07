@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #b3b3b3;
+  background-color: #3b3b3b;
   color: white;
 }
 
@@ -89,11 +89,9 @@ nav {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-in-out;
+  background-color: #b3b3b3;
 }
 
-.card {
-  background-color: #3b3b3b;
-}
 .cardImg {
   @apply h-card2 xsm:h-card w-6/12 border-black border-b-2 sm:w-full sm:mx-auto sm:h-4/6;
 }
@@ -107,7 +105,7 @@ nav {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  background-color: #3b3b3b;
+  background-color: #b3b3b3;
 }
 
 .card2:hover {
@@ -165,7 +163,8 @@ footer {
 }
 
 .servicesCard {
-  @apply flex mt-5 flex-col gap-4 lg:flex-row md:justify-center md:gap-12 items-center border-black mx-4 p-2;
+  @apply flex mt-5 flex-col gap-4 lg:flex-row md:justify-center md:gap-12 items-center border-black mx-4 p-2 rounded-2xl;
+  background-color: #b3b3b3;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -199,10 +198,6 @@ footer {
   background-image: url("/img/AboutUsImg.avif");
 }
 
-.servicesHome {
-  background-color: #b3b3b3;
-}
-
 .aboutImageMain {
   background-size: cover;
   background-position: center;
@@ -215,4 +210,18 @@ footer {
   background-position: center;
   background-attachment: fixed;
   background-image: url("/img/Vision_Img.avif");
+}
+
+.servicesTop {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/img/ServicesMainImg.avif");
+}
+
+.PortfolioMain {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/img/Portfolio_Img.avif");
 }

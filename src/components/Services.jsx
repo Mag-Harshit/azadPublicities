@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       const cards = document.querySelectorAll(".card");
@@ -120,8 +121,11 @@ const Services = () => {
         </div>
         <div className="text-center">
           <button
-            className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
+            className="text-white w-auto p-4 border-black border-4 text-xl rounded-lg mt-8"
             id="ServicesBtn2"
+            onClick={() => {
+              navigate("/services");
+            }}
           >
             <a href="/services"> More Services</a>
           </button>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       const text = document.querySelectorAll(".transiText");
@@ -37,6 +38,9 @@ const Hero = () => {
               <button
                 className="text-white w-auto p-4 border-black border-4 text-xl rounded-lg transiText"
                 id="ServicesBtn"
+                onClick={() => {
+                  navigate("/services");
+                }}
               >
                 <a href="/services"> Discover Our Services</a>
               </button>

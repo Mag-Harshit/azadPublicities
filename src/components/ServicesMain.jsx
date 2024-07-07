@@ -3,18 +3,20 @@ import React from "react";
 const ServicesMain = () => {
   return (
     <div>
-      <div className="text-7xl font-extrabold text-center mt-5">
-        <h1>SERVICES</h1>
+      <div className="servicesTop">
+        <div className="text-7xl font-extrabold text-center p-8">
+          <h1>SERVICES</h1>
+        </div>
+        <div>
+          <p className="mt-4 text-2xl text-center pb-10">
+            Azad Publicities in Ludhiana offers a wide range of advertising
+            services tailored to meet the needs of various clients. Here are
+            some of the key services provided by Azad Publicities:
+          </p>
+        </div>
       </div>
-      <div>
-        <p className="mt-4 text-2xl text-center">
-          Azad Publicities in Ludhiana offers a wide range of advertising
-          services tailored to meet the needs of various clients. Here are some
-          of the key services provided by Azad Publicities:
-        </p>
-      </div>
-      <hr className="mt-4" />
-      <div className="flex flex-col mt-10">
+      <hr />
+      <div className="flex flex-col pb-8">
         <div className="servicesCard border-3">
           <img
             src="/img/Cinema_Services.jpg"

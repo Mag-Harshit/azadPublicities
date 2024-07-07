@@ -26,17 +26,29 @@ const Footer = () => {
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button>
+              <button
+                onClick={() => {
+                  navigate("/aboutUs");
+                }}
+              >
                 <a href="/aboutUs">About Us</a>
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button>
+              <button
+                onClick={() => {
+                  navigate("/services");
+                }}
+              >
                 <a href="/services"> Services</a>
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
-              <button>
+              <button
+                onClick={() => {
+                  navigate("/portfolio");
+                }}
+              >
                 <a href="/portfolio"> Portfolio</a>
               </button>
             </li>

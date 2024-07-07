@@ -122,7 +122,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div
-        className="modal fade"
+        className="modal fade text-black"
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
