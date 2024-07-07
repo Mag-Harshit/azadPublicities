@@ -31,7 +31,7 @@ const Footer = () => {
                   navigate("/aboutUs");
                 }}
               >
-                <a href="/aboutUs">About Us</a>
+                About Us
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
@@ -40,7 +40,7 @@ const Footer = () => {
                   navigate("/services");
                 }}
               >
-                <a href="/services"> Services</a>
+                Services
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
@@ -49,7 +49,7 @@ const Footer = () => {
                   navigate("/portfolio");
                 }}
               >
-                <a href="/portfolio"> Portfolio</a>
+                Portfolio
               </button>
             </li>
 
