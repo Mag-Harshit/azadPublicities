@@ -6,14 +6,11 @@ const Navbar = () => {
   const [itemVisible, setItemVisible] = useState(false);
   function handleVisibility() {
     setItemVisible(!itemVisible);
-    console.log(itemVisible);
   }
 
   function handleMenuRemover() {
-    console.log("sewew");
     if (itemVisible) {
       setItemVisible(!itemVisible);
-      console.log("HELLO");
     }
   }
 
@@ -124,7 +121,7 @@ const Navbar = () => {
       <div
         className="modal fade text-black"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >

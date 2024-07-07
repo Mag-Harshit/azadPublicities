@@ -5,8 +5,8 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <footer className="p-3">
-      <div class="footer-container flex flex-wrap justify-around mx-auto">
-        <div class=" flex flex-col m-2">
+      <div className="footer-container flex flex-wrap justify-around mx-auto">
+        <div className=" flex flex-col m-2">
           <h3 className="text-2xl mt-2 mb-2">Contact Information</h3>
           <p className="text-md my-3">Azad Publicities</p>
           <p className="text-md">
@@ -17,7 +17,7 @@ const Footer = () => {
           <p>Working Hours: Mon-Sat, 10 AM - 7 PM</p>
           <p className="text-md my-3">Email: azadpublicities@gmail.com</p>
         </div>
-        <div class="flex flex-col m-2">
+        <div className="flex flex-col m-2">
           <h3 className="text-2xl mt-2 mb-2 footerChange">Quick Links</h3>
           <ul>
             <li className="text-md my-3 hover:text-black">
@@ -60,7 +60,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="flex flex-col m-2">
+        <div className="flex flex-col m-2">
           <h3 className="text-2xl mt-2 mb-2 footerChange flex items-center gap-2">
             Follow Us
           </h3>
@@ -107,7 +107,7 @@ const Footer = () => {
       <div
         className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
