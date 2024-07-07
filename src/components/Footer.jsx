@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <footer className="p-3 mt-20">
+    <footer className="p-3">
       <div class="footer-container flex flex-wrap justify-around mx-auto">
         <div class=" flex flex-col m-2">
           <h3 className="text-2xl mt-2 mb-2">Contact Information</h3>

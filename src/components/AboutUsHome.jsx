@@ -16,7 +16,7 @@ const AboutUsHome = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section className="mt-10">
+    <section className="py-10 bgImageAbout">
       <div className="m-auto font-body rounded-3xl AbHome w-11/12 p-4">
         <div className="flex justify-center mr-auto mb-5">
           <h2 className="text-7xl font-extrabold">ABOUT US</h2>
@@ -42,7 +42,7 @@ const AboutUsHome = () => {
             </p>
             <div className="text-center">
               <button
-                className="text-black w-auto p-4 border-black border-4 text-xl rounded-lg mt-8 transiText"
+                className="text-white w-auto p-4 border-black border-4 text-xl rounded-lg mt-8 transiText"
                 id="AboutUsBtn"
               >
                 <a href="/aboutUs">Learn More About Us</a>

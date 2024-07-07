@@ -23,6 +23,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 .shadow-1-strong {
@@ -70,8 +71,6 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
 }
 .AbHome {
-  background-color: #ffffff;
-  background-repeat: no-repeat;
   min-height: 650px;
 }
 
@@ -84,7 +83,7 @@ nav {
 }
 
 .card {
-  @apply h-card2 flex mx-1 flex-row max-w-7xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 text-black rounded-xl;
+  @apply h-card2 text-white flex mx-1 flex-row max-w-7xl xsm:h-card sm:h-auto sm:block   sm:max-w-96 rounded-xl;
   transition: transform 0.3s ease-in-out;
   opacity: 0;
   transform: translateY(20px);
@@ -92,7 +91,7 @@ nav {
 }
 
 .card {
-  background-color: #a7a7a7;
+  background-color: #3b3b3b;
 }
 .cardImg {
   @apply h-card2 xsm:h-card w-6/12 border-black border-b-2 sm:w-full sm:mx-auto sm:h-4/6;
@@ -107,6 +106,7 @@ nav {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  background-color: #3b3b3b;
 }
 
 .card2:hover {
@@ -120,9 +120,10 @@ nav {
 }
 
 .ProjectBG {
-  background-image: url(/img/bg-3.png);
-  background-repeat: no-repeat;
-  background-color: #696969;
+  background-image: url(/img/ProjectImg.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 footer {
@@ -180,11 +181,23 @@ footer {
 
 .transiText {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateX(-100px);
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
 }
 
 .transiText.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+}
+
+.bgImageAbout {
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/img/AboutUsImg.avif");
+}
+
+.servicesHome {
+  background-color: #b3b3b3;
 }

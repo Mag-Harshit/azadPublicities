@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const text = document.querySelectorAll(".transiText");
+      text.forEach((texts) => {
+        const rect = texts.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          texts.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <section className="mt-12 p-2 rounded ProjectBG">
-      <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row justify-between items-center">
-        <div className="flex flex-col sm:flex-row items-center sm:w-6/12 gap-4">
+    <section className="py-12 px-2 rounded ProjectBG">
+      <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row justify-between items-center text-white">
+        <div className="flex flex-col sm:flex-row items-center sm:w-6/12 gap-4 transiText">
           <h2 className="text-7xl font-extrabold ClientHome ml-10 sm:text-3xl md:text-3xl lg:text-5xl">
             OUR CLIENTS
           </h2>
@@ -18,7 +33,7 @@ const Projects = () => {
         </div>
         <div
           id="carouselExample"
-          className="carousel slide w-full sm:w-6/12 md:mr-10"
+          className="carousel slide w-full sm:w-6/12 md:mr-10 transiText"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
