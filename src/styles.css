@@ -192,7 +192,6 @@ footer {
 
 .bgImageAbout {
   color: white;
-  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-image: url("/img/AboutUsImg.avif");
