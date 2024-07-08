@@ -192,6 +192,7 @@ footer {
 
 .bgImageAbout {
   color: white;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-image: url("/img/AboutUsImg.avif");
@@ -223,4 +224,35 @@ footer {
   background-position: center;
   background-attachment: fixed;
   background-image: url("/img/Portfolio_Img.avif");
+}
+
+@media screen and (max-width: 435px) {
+  .PortfolioMain {
+    background-attachment: scroll;
+  }
+  .servicesTop {
+    background-attachment: scroll;
+  }
+  .visionIMg {
+    background-attachment: scroll;
+  }
+  .aboutImageMain {
+    background-attachment: scroll;
+  }
+
+  .bgImageAbout {
+    background-attachment: scroll;
+  }
+
+  .ProjectBG {
+    background-attachment: scroll;
+  }
+
+  .bg-image {
+    background-attachment: scroll;
+  }
+
+  .mask {
+    background-attachment: scroll;
+  }
 }
