@@ -25,7 +25,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Cinema Advertising
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Engage audiences with high-impact ads shown before movies in local
               cinemas. Perfect for promoting new products, businesses, and
               events.
@@ -41,7 +41,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Radio Advertising
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Reach a broad audience with compelling radio ads featuring
               engaging storytelling and catchy jingles. Ideal for building brand
               awareness.
@@ -57,7 +57,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Unipole Advertising
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Large-scale ads on tall poles in high-traffic areas, ensuring
               maximum visibility. Great for promoting products and events.
             </p>
@@ -72,7 +72,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Neon Signs
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Custom neon signs that enhance business visibility and branding,
               especially at night. Ideal for storefronts and entertainment
               venues.
@@ -88,7 +88,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Boards and Banners
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Versatile advertising tools for events, promotions, and business
               advertising. Durable and attractive for various settings.
             </p>
@@ -103,7 +103,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Kiosks
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Interactive kiosks for engaging customers at malls, trade shows,
               and public events. Perfect for product demos and information
               distribution.
@@ -119,7 +119,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Hoardings
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Large billboards in prime locations to maximize exposure. Designed
               to capture attention and reinforce brand presence.
             </p>
@@ -134,7 +134,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Bus Shelters
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               High-visibility ads at bus shelters, targeting daily commuters.
               Ideal for local businesses and public announcements.
             </p>
@@ -149,7 +149,7 @@ const ServicesMain = () => {
             <h2 className="text-2xl font-semibold mb-6 text-center lg:text-left">
               Railway Advertising
             </h2>
-            <p className=" text-sm md:text-lg text-center lg:text-left">
+            <p className="text-lg text-center lg:text-left">
               Ads in railway stations and on trains, reaching a diverse audience
               of travelers and commuters. Various formats available.
             </p>
