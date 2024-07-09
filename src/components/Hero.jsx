@@ -42,7 +42,7 @@ const Hero = () => {
                   navigate("/services");
                 }}
               >
-                <a href="/services"> Discover Our Services</a>
+                Discover Our Services
               </button>
             </div>
           </div>

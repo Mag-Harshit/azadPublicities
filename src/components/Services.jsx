@@ -127,7 +127,7 @@ const Services = () => {
               navigate("/services");
             }}
           >
-            <a href="/services"> More Services</a>
+            More Services
           </button>
         </div>
       </div>

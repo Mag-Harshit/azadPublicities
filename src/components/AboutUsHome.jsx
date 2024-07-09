@@ -48,7 +48,7 @@ const AboutUsHome = () => {
                 id="AboutUsBtn"
                 onClick={() => [navigate("/aboutUs")]}
               >
-                <a href="/aboutUs">Learn More About Us</a>
+                Learn More About Us
               </button>
             </div>
           </div>

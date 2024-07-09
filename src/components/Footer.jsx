@@ -21,8 +21,12 @@ const Footer = () => {
           <h3 className="text-2xl mt-2 mb-2 footerChange">Quick Links</h3>
           <ul>
             <li className="text-md my-3 hover:text-black">
-              <button>
-                <a href="/"> Home</a>
+              <button
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                Home
               </button>
             </li>
             <li className="text-md my-3 hover:text-black">
